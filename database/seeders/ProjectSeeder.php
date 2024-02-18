@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Project;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,17 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $projects = config('db.projects');
+
+        foreach ($projects as $project) {
+            $newProject = new Project();
+            $newProject->title = $project['title'];
+            $newProject->author = $project['author'];
+            $newProject->proj_image = $project['image'];
+            $newProject->description = $project['description'];
+            $newProject->start_date = $project['start_date'];
+            $newProject->completion_date = $project['completion_date'];
+            $newProject->save();
+       }
     }
 }

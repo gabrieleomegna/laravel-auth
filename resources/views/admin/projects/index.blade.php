@@ -27,6 +27,13 @@
                             <td>{{$project->title}}</td>
                             <td>{{$project->author}}</td>
                             <td>{{$project->completion_date}}</td>
+                            <td>
+                                <a href="{{route('admin.projects.show', $project)}}">
+                                    <button class="btn btn-sm btn-primary">View</button>
+                                </a>
+                                <button class="btn btn-sm btn-success">Edit</button>
+                                <button class="btn btn-sm btn-warning">Delete</button>
+                            </td>
                         </tr>
                     @empty
                         <h3>There are no projects...</h3>

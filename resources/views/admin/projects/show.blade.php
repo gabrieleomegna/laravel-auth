@@ -14,7 +14,6 @@
                   <p class="card-text">This project was made in: {{$project->no_days_taken}} days</p>
                   <p class="card-text">Start date: {{$project->start_date}}</p>
                   <p class="card-text">Completion date: {{$project->completion_date}}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
         </div>

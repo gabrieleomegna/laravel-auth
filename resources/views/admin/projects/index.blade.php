@@ -31,7 +31,9 @@
                                 <a href="{{route('admin.projects.show', $project)}}">
                                     <button class="btn btn-sm btn-primary">View</button>
                                 </a>
-                                <button class="btn btn-sm btn-success">Edit</button>
+                                <a href="{{route('admin.projects.edit', $project)}}">
+                                    <button class="btn btn-sm btn-success">Edit</button>
+                                </a>
                                 <button class="btn btn-sm btn-warning">Delete</button>
                             </td>
                         </tr>

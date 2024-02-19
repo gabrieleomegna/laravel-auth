@@ -38,24 +38,25 @@ class ProjectController extends Controller
     {
         $data = $request->all();
         $project = Project::create($data);
-        return view('admin.projects.show', compact('project'));
+        return redirect()->route('admin.projects.show', $project);
     }
 
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Project $project)
     {
-        //
+        return view('admin.projects.edit', compact('project'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
-    {
-        //
+    public function update(Request $request, Project $project){
+        $data = $request->all();
+        $project -> update($data);
+        return redirect()->route('admin.projects.show', $project);
     }
 
     /**

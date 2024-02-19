@@ -23,6 +23,9 @@ class ProjectSeeder extends Seeder
             $newProject->description = $project['description'];
             $newProject->start_date = $project['start_date'];
             $newProject->completion_date = $project['completion_date'];
+            $newProject->no_days_taken = (strtotime($project['completion_date']) - strtotime($project['start_date'])) / 86400;
+            if($newProject->no_days_taken === 0) $newProject->no_days_taken = 1;
+
             $newProject->save();
        }
     }

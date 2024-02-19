@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->date('start_date');
             $table->date('completion_date');
+            $table->integer('no_days_taken');
             $table->timestamps();
         });
     }

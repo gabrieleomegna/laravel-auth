@@ -17,7 +17,7 @@
                         <th scope="col">id</th>
                         <th scope="col">Title</th>
                         <th scope="col">Author</th>
-                        <th scope="col">Completion date</th>
+                        <th scope="col">Number of days to be completed</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,7 +26,7 @@
                             <th scope="row">{{$project->id}}</th>
                             <td>{{$project->title}}</td>
                             <td>{{$project->author}}</td>
-                            <td>{{$project->completion_date}}</td>
+                            <td>{{$project->no_days_taken}}</td>
                             <td>
                                 <a href="{{route('admin.projects.show', $project)}}">
                                     <button class="btn btn-sm btn-primary">View</button>

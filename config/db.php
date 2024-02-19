@@ -8,7 +8,7 @@ return [ 'projects' =>
             "image" => "https://picsum.photos/200/300",
             "description" => "In questo progetto ho utilizzato il framework Vue per implementare una imitazione di whatsapp",
             "start_date" => "2023/12/11",
-            "completion_date" => "2023/11/16",
+            "completion_date" => "2023/12/16",
         ],
         [
             "title" => "vite-boolflix",
@@ -16,7 +16,7 @@ return [ 'projects' =>
             "image" => "https://picsum.photos/200/300",
             "description" => "In questo progetto ho utilizzato il framework Vue e Vite per implementare un'api di film su netflix",
             "start_date" => "2023/12/26",
-            "completion_date" => "2023/11/26",
+            "completion_date" => "2023/12/26",
         ],
         [
             "title" => "proj-html-vuejs",

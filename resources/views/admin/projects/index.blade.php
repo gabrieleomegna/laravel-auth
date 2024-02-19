@@ -40,6 +40,9 @@
                     @endforelse
                 </tbody>
               </table>
+              <a href="{{route('admin.projects.create')}}">
+                  <button class="btn btn-xl btn-primary">Create new project</button>
+              </a>
         </div>
     </div>
 </div>

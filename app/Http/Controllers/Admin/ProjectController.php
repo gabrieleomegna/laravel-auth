@@ -27,9 +27,8 @@ class ProjectController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('admin.projects.create');
     }
 
     /**
@@ -37,7 +36,9 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $project = Project::create($data);
+        return view('admin.projects.show', compact('project'));
     }
 
 
